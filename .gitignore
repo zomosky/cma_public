@@ -1,0 +1,20 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+
+# Local env / editor
+.env
+.DS_Store
+
+# Local private config (do not commit secrets)
+src/settings.local.json
+
+# Generated outputs
+outputs/
+[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].md
+
+# Internal process docs (not for public repo)
+AGENTS.md
+RULES.md
+SESSION_STATE.md
+DECISIONS.md

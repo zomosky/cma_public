@@ -1,0 +1,15 @@
+{
+  "llm": {
+    "api_key": "your_api_key_here"
+  },
+  "smtp": {
+    "host": "smtp.example.com",
+    "port": 465,
+    "user": "your_email@example.com",
+    "password": "your_smtp_password_or_app_password",
+    "use_ssl": true,
+    "from": "your_email@example.com",
+    "to": "your_email@example.com",
+    "subject_prefix": "[CMA]"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "sources": {
+    "urls": [
+      "https://www.nmc.cn/publish/weather-bulletin/index.htm",
+      "https://www.nmc.cn/publish/weatherperday/index.htm",
+      "https://www.nmc.cn/publish/news/weather_new.html",
+      "https://www.nmc.cn/publish/bulletin/mid-range.htm",
+      "https://www.nmc.cn/publish/typhoon/warning_index.html"
+    ],
+    "overview_only_urls": [
+      "https://www.nmc.cn/publish/bulletin/mid-range.htm"
+    ]
+  },
+  "filtering": {
+    "target_provinces": [
+      "山东",
+      "湖北",
+      "安徽",
+      "山西",
+      "河北",
+      "辽宁",
+      "河南",
+      "黑龙江",
+      "甘肃",
+      "陕西",
+      "宁夏",
+      "广东",
+      "江西",
+      "广西",
+      "贵州"
+    ],
+    "province_aliases": {
+      "广西": ["广西", "广西壮族自治区", "广"],
+      "宁夏": ["宁夏", "宁夏回族自治区"],
+      "黑龙江": ["黑龙江", "龙江"]
+    },
+    "event_keywords": [
+      "台风",
+      "大风",
+      "沙尘",
+      "降雪",
+      "暴雪",
+      "雨夹雪",
+      "大雨",
+      "暴雨",
+      "大暴雨",
+      "特大暴雨"
+    ]
+  },
+  "runtime": {
+    "timeout_seconds": 20
+  },
+  "llm": {
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-reasoner",
+    "api_key": ""
+  },
+  "smtp": {
+    "host": "smtp.example.com",
+    "port": 465,
+    "user": "your_email@example.com",
+    "password": "",
+    "use_ssl": true,
+    "from": "your_email@example.com",
+    "to": "your_email@example.com",
+    "subject_prefix": "[CMA]"
+  }
+}
